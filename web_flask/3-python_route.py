@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 script that starts a Flask web application
 listening on 0.0.0.0, port 5000
 """
@@ -25,6 +25,7 @@ def hbnb():
 def cText(text):
     """ display C followed by the value of the text variable """
     return "C {}".format(text.replace("_", " "))
+
 
 @app.route('/python', strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
